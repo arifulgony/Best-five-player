@@ -1,6 +1,5 @@
-
+//count in card
 const cart = [];
-
 function display(cart){
     const cartContainer = document.getElementById("player-cart");
     cartContainer.textContent = '';
@@ -15,7 +14,7 @@ function display(cart){
             `;
             cartContainer.appendChild(div);
         }else{
-          alert('this is not posibale')
+          alert('this is not possible')
         }
 
     }
@@ -34,11 +33,8 @@ function addToCart(element) {
     }
   
 
-   
-//------------------------------------------------
 
-
-
+// players total amount
 document.getElementById('players-total').addEventListener('click' , function previus(){
     const palyerFiled = document.getElementById("player_filed");
     const parPlayerString = palyerFiled.value;
@@ -51,8 +47,8 @@ document.getElementById('players-total').addEventListener('click' , function pre
 
 })
 
-document.getElementById('total-calculate').addEventListener('click' , function(){
-    
+// total amount
+document.getElementById('total-calculate').addEventListener('click' , function(){  
     const managerField = document.getElementById('manager-field');
     const managerFieldAmountString = managerField.value;
     const managerFieldAmount = parseFloat(managerFieldAmountString);
